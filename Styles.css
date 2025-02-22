@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(135deg, #7fffd4, #00ced1); /* Verde aguamarina */
+  color: #000; /* Texto en negro */
+  padding: 50px 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.product-image {
+  width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+  max-width: 500px; /* Limita el tamaño máximo en PC */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-text {
+  flex: 1;
+  text-align: left;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #000; /* Texto en negro */
+}
+
+.highlight {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #000; /* Texto en negro */
+}
+
+.cta-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #000; /* Texto en negro */
+}
+
+.cta-text strong {
+  color: #ffd700; /* Color dorado para resaltar el descuento */
+}
+
+.cta-button {
+  background-color: #ffd700;
+  color: #333;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin: 20px 0;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ffc107;
+}
+
+#countdown {
+  background-color: #ffd700; /* Fondo amarillo */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 400px;
+  color: #000; /* Texto en negro */
+}
+
+#countdown p {
+  color: #000; /* Texto en negro */
+  margin: 0;
+}
+
+#timer {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #000; /* Texto en negro */
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #ff0000; /* Rojo para el precio tachado */
+}
+
+.discount-price {
+  color: #00008b; /* Azul oscuro para el precio final */
+  font-weight: bold;
+}
+
+#descripcion,
+#testimonios {
+  padding: 40px 20px;
+  background-color: white;
+  margin: 20px 0;
+}
+
+#descripcion ul {
+  list-style: none;
+  padding: 0;
+}
+
+#descripcion li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+.testimonio {
+  background-color: #f4f4f4;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+/* Media Queries para celulares */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column; /* Apila la imagen y el texto en una columna */
+    gap: 20px;
+  }
+
+  .product-image {
+    max-width: 100%; /* La imagen ocupa el 100% del ancho en celulares */
+  }
+
+  .header-text {
+    text-align: center; /* Centra el texto en celulares */
+  }
+
+  header h1 {
+    font-size: 2rem; /* Reduce el tamaño del título en celulares */
+  }
+
+  .highlight {
+    font-size: 1rem; /* Reduce el tamaño del texto destacado */
+  }
+
+  .cta-text {
+    font-size: 1rem; /* Reduce el tamaño del texto de llamado a la acción */
+  }
+
+  .cta-button {
+    padding: 10px 20px; /* Reduce el tamaño del botón en celulares */
+    font-size: 1rem;
+  }
+
+  #countdown {
+    padding: 15px; /* Reduce el padding del temporizador */
+  }
+
+  #timer {
+    font-size: 1.5rem; /* Reduce el tamaño del temporizador */
+  }
+}
